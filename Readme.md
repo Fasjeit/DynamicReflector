@@ -1,18 +1,13 @@
 # DynamicReflector
 
-**DynamicReflector** is a C# library that provides an easy way to access fields and 
-methods on objects and static classes using dynamic and reflection.
+**DynamicReflector** is a C# library that provides an easy way to access fields and methods on objects and static classes using dynamic and reflection.
 
-Powered by [Traverse](https://github.com/pardeike/Harmony/blob/master/Harmony/Tools/Traverse.cs) 
-from [Harmony](https://github.com/pardeike/Harmony) 
-by [Andreas Pardeike](https://github.com/pardeike).
+Powered by [Traverse](https://github.com/pardeike/Harmony/blob/master/Harmony/Tools/Traverse.cs) from [Harmony](https://github.com/pardeike/Harmony) by [Andreas Pardeike](https://github.com/pardeike).
 
 ## How it works
-The Reflector object binds to another object and uses reflection to access its fields 
-and methods.
+The Reflector object binds to another object and uses reflection to access its fields and methods.
 
-When you access a member of the `Reflector` dynamic object, a new Reflector object is 
-returned that is bound to the resulting object.
+When you access a member of the `Reflector` dynamic object, a new Reflector object is returned that is bound to the resulting object.
 
 ```chsarp
 // dynamic reflector
@@ -20,8 +15,7 @@ dynamic fieldReflection = reflector.filed;
 dynamic methodReflection =  reflector.method();
 ```
 
-When you write to a member of the `Reflector` dynamic object, the value is written 
-directly to the bound object.
+When you write to a member of the `Reflector` dynamic object, the value is written directly to the bound object.
 
 ```chsarp
 // dynamic reflector
@@ -29,7 +23,7 @@ reflector.filed = 7; // changes binded object filed value
 ```
 
 ## Installation
-Install [nuget packet](link)
+Install [nuget packet](https://www.nuget.org/packages/DynamicReflector)
 
 via dotnet
 ```

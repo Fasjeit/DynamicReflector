@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicReflector", "src\Dyn
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F58837B1-DC96-4AA0-A1BE-93003D347516}"
 	ProjectSection(SolutionItems) = preProject
-		Reame.md = Reame.md
+		Readme.md = Readme.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicReflector.Samples", "src\DynamicReflector.Samples\DynamicReflector.Samples.csproj", "{53A04AB6-B9D1-462C-8BCD-07817FD65497}"

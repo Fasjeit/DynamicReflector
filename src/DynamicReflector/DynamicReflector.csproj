@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>DynamicReflector</Title>
+    <Version>$([System.DateTime]::UtcNow.ToString(yyyy.MM.dd.0001))</Version>
+    <Authors>Artyom Makarov</Authors>
+    <Company>Artyom Makarov</Company>
+    <Description>Dynamic reflection based accessor for dotnet objects and static classes.</Description>
+    <PackageIcon>icons8-vertical-reflection-78.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/Fasjeit/DynamicReflector</PackageProjectUrl>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Fasjeit/DynamicReflector</RepositoryUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\ico\icons8-vertical-reflection-78.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

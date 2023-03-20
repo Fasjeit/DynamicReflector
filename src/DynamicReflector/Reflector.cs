@@ -59,7 +59,7 @@ namespace DynamicReflector
         {
             var obj = Activator.CreateInstance(
                 type: type,
-                bindingAttr: BindingFlags.Instance | BindingFlags.NonPublic,
+                bindingAttr: BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public,
                 binder: null,
                 args: args,
                 culture : null);
@@ -93,7 +93,7 @@ namespace DynamicReflector
             }
             var obj = Activator.CreateInstance(
                 type: type,
-                bindingAttr: BindingFlags.Instance | BindingFlags.NonPublic,
+                bindingAttr: BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public,
                 binder: null,
                 args: args,
                 culture: null);

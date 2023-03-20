@@ -136,7 +136,7 @@ namespace DynamicReflector
             {
                 throw new ArgumentException("Type not found");
             }
-            return CreateStatic(type);
+            return Reflector.CreateStatic(type);
         }
 
         public override bool TryCreateInstance(

@@ -10,16 +10,24 @@ The Reflector object binds to another object and uses reflection to access its f
 When you access a member of the `Reflector` dynamic object, a new Reflector object is returned that is bound to the resulting object.
 
 ```chsarp
-// dynamic reflector
-dynamic fieldReflection = reflector.filed;
+dynamic reflector = obj.ToReflector();
+dynamic fieldReflection = reflector.fieled;
 dynamic methodReflection =  reflector.method();
 ```
 
 When you write to a member of the `Reflector` dynamic object, the value is written directly to the bound object.
 
 ```chsarp
-// dynamic reflector
-reflector.filed = 7; // changes binded object filed value
+dynamic reflector = obj.ToReflector();
+reflector.fieled = 7; // changes binded object fieled value
+```
+
+You can always get original object from reflector
+
+```chsarp
+dynamic reflector = obj.ToReflector();
+dynamic fieldReflection = reflector.fieled;
+object field = fieldReflection.OriginalObject;
 ```
 
 ## Installation
